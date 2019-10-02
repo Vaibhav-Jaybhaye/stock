@@ -4,6 +4,13 @@ const initialState = {
         error: ''
     }
 }
+
+/**
+ * @method
+ * @param  {array} previousData
+ * @param  {array} latestData
+ * @description Method to procces the fetched data and map it into required format.
+ */
 const getFinalData = (previousData, latestData) => {
     let allData = previousData;
     latestData.forEach(singleValue => {
